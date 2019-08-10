@@ -18,7 +18,7 @@ public class SimpleSort {
         //对数组来源进行拷贝，不改变参数内容
         int[] arr = Arrays.copyOf(sourceArray,sourceArray.length);
 
-
+        //经过arr.length-1轮循环
         for (int i = 1; i < arr.length; i++) {
             for (int j = 0; j < arr.length - i; j++) {
                 if (arr[j] > arr[j + 1]) {
