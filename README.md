@@ -62,7 +62,7 @@ Java Simple Data Structure Demo，JAVA简单的数据结构Demo
 * 哈希化的效率
 * 哈希化和外部存储
 
-堆(Stack)
+堆(Heap)
 * 堆
 * 基于树的堆
 * 堆排序
