@@ -14,7 +14,6 @@ Java Simple Data Structure Demo，JAVA简单的数据结构Demo
 * 单链表
 * 双向链表
 * 有序链表
-* 迭代器
 
 递归(Recursive)
 * 三角数字
