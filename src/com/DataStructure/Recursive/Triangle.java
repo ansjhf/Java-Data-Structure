@@ -9,7 +9,16 @@ package com.DataStructure.Recursive;
  *      n的三角数字是 1+2+3+...+N
  */
 public class Triangle {
+
+    /**
+     * Task：for循环实现
+     * @param n
+     * @return
+     */
     public static int getTriangleNumByFor(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("必须为正整数！");
+        }
         int result = 0;
         for (int i = 1; i <= n; i++) {
             result = result + i;
@@ -17,11 +26,27 @@ public class Triangle {
         return result;
     }
 
+    /**
+     * Task:数学实现
+     * @param n
+     * @return
+     */
     public static int getTriangleNumByMath(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("必须为正整数！");
+        }
         return (n * n + n) / 2;
     }
 
+    /**
+     * Task:while实现
+     * @param n
+     * @return
+     */
     public static int getTriangleNumByWhile(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("必须为正整数！");
+        }
         int result = 0;
         while (n > 0) {
             result = result + (n--);
@@ -29,7 +54,15 @@ public class Triangle {
         return result;
     }
 
+    /**
+     * Task:递归实现
+     * @param n
+     * @return
+     */
     public static int getTriangleNumByRecursive(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("必须为正整数！");
+        }
         int result = 0;
         if (n == 1) {
             return 1;
