@@ -6,7 +6,7 @@ package com.DataStructure.Recursive;
 public class MergeSort {
 
     /**
-     * Task:并归排序的实现思想
+     * Task:并归排序的实现思想:归并两个已经有序的数组
      * @param arrayA
      * @param arrayB
      * @return arrayC
@@ -49,25 +49,32 @@ public class MergeSort {
         }
     }
 
-    private static void merge(int[] array, int left, int midR, int upperBound) {
+    /**
+     *Task:归并
+     * @param array 归并的数组
+     * @param left
+     * @param midRight
+     * @param upperBound
+     */
+    private static void merge(int[] array, int left, int midRight, int upperBound) {
         int j = 0;
         int[] temp = new int[array.length];
         int lowerBound = left;
-        int mid = midR-1;
+        int mid = midRight-1;
         int n = upperBound - lowerBound + 1;
 
-        while (left <= mid && midR <= upperBound) {
-            if (array[left] < array[midR]) {
+        while (left <= mid && midRight <= upperBound) {
+            if (array[left] < array[midRight]) {
                 temp[j++] = array[left++];
             } else {
-                temp[j++] = array[midR++];
+                temp[j++] = array[midRight++];
             }
         }
         while (left <= mid) {
             temp[j++] = array[left++];
         }
-        while (midR <= upperBound) {
-            temp[j++] = array[midR++];
+        while (midRight <= upperBound) {
+            temp[j++] = array[midRight++];
         }
 
         for (int k = 0; k < n; k++) {
