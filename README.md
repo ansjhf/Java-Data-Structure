@@ -25,7 +25,7 @@ Java Simple Data Structure Demo，JAVA简单的数据结构Demo
 
 高级排序(AdvanceSort)
 * 希尔排序
-* 划分
+* 划分算法
 * 快速排序
 * 基数排序
 
