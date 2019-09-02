@@ -13,7 +13,7 @@ public class QuickSort {
     }
 
     private void Sort(int left, int right) {
-        if (right - left <= 0) {
+        if (right - left <= 0) {    // if size <= 1,already sorted
             return;
         } else {
             int pivot = array[right];
