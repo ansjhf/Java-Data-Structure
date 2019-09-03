@@ -33,7 +33,7 @@ public class RadixSort {
     }
 
     /**
-     * Task:获取最高位
+     * Task:获取数组位数最高的位数
      * @param arr
      * @return
      */
