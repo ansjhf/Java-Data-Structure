@@ -58,9 +58,12 @@ public class BinaryTree {
 
     /**
      * Task:中序历遍
-     * @param localRoot
      */
-    public void inOrder(Node localRoot) {
+    public void inOrder(){
+        inOrder(root);
+    }
+
+    private void inOrder(Node localRoot) {
         if (localRoot != null) {
             inOrder(localRoot.leftChild);
             System.out.println(localRoot.iData + " ");
