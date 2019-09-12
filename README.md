@@ -31,11 +31,6 @@ Java Simple Data Structure Demo，JAVA简单的数据结构Demo
 
 二叉树(BinaryTree)
 * 二叉树
-* 查找节点
-* 插入一个节点
-* 历遍树
-* 查找最大值和最小值
-* 删除节点
 * 哈夫曼编码
 
 红-黑数(Red Black Tree)

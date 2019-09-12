@@ -9,6 +9,7 @@ public class MinHeap<T extends Comparable<T>> {
 
     public MinHeap(){
         this.mHeap = new ArrayList<T>();
+
     }
 
     /**
