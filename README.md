@@ -35,8 +35,6 @@ Java Simple Data Structure Demo，JAVA简单的数据结构Demo
 
 红-黑数(Red Black Tree)
 * 红-黑数
-* 平衡树和非平衡树
-* 红-黑树的效率
 
 2-3-4树和外部存储
 * 2-3-4树
